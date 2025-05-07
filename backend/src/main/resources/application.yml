@@ -1,0 +1,21 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/SMART_DOC_WORKFLOW_DB
+    username: SMART_DOC_USERg
+    password: StrongP@ss123
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+jwt:
+  secret: YOUR_SUPER_SECRET_JWT_KEY
+  expirationMs: 3600000
